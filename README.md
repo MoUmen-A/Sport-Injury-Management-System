@@ -14,7 +14,7 @@ This project is built using **Java** with a **Java Swing** interface, following 
 
 ### Class Design (UML Diagram)
 Below is the architectural design of the system:
-![UML Diagram](./docs/Class diagramUML.png)
+![UML Diagram](./docs/Class-diagramUML.png)
 
 ## 💡 Our Motivation
 * To categorize injuries and simplify the diagnosis process for doctors.

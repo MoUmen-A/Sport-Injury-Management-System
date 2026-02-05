@@ -5,7 +5,7 @@ The **Injury Assist System** is designed to provide essential and fast support d
 
 ## 📊 System Design (UML)
 Below is the Object-Oriented design of the system.
-![UML Diagram](./docs/{C24C204A-91F9-4537-A6D1-BED154A84C74}.png)
+![UML Diagram](https://github.com/MoUmen-A/Sport-Injury-Management-System/blob/main/docs/Class%20diagramUML.png)
 
 ## 🚀 Key Functionality
 * **Determine Injury & Severity**: Logic-based assessment to categorize injury levels.

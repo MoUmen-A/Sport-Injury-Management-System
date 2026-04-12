@@ -1,139 +1,30 @@
-# Sports Injury Management System
+# 🏥 Sports Injury Management System (Injury Assist)
 
-A Java OOP project for managing sports injuries, patient profiles, appointments, and treatment recommendations.
+## 🌟 Introduction
+The **Injury Assist System** is designed to provide essential and fast support during critical unexpected injuries. By streamlining patient-doctor communication, it minimizes risks associated with delayed care and ensures injuries are properly assessed with topical treatments to prevent them from worsening.
 
-This project provides two interfaces:
-- CLI workflow via `Main`
-- Swing GUI workflow via `MainGUI`
+## 📊 System Design (UML)
+Below is the Object-Oriented design of the system.
+![UML Diagram](https://github.com/MoUmen-A/Sport-Injury-Management-System/blob/main/docs/Class%20diagramUML.png)
 
-## Table of Contents
-- [Overview](#overview)
-- [Core Features](#core-features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [How to Run](#how-to-run)
-- [Build and Clean](#build-and-clean)
-- [Data Storage](#data-storage)
-- [Documentation](#documentation)
-- [Known Notes](#known-notes)
-- [Contributing](#contributing)
+## 🚀 Key Functionality
+* **Determine Injury & Severity**: Logic-based assessment to categorize injury levels.
+* **Treatment Matching**: Automatically suggests suitable treatments based on injury type.
+* **Appointment Booking**: Integrated system for scheduling medical visits.
+* **Patient Records**: Securely saves data and generates a summarized report for every patient.
+* **Automated Reporting**: Patients receive medical reports to assist in their future health management.
 
-## Overview
-The system helps an athlete/patient:
-- Create an account or log in
-- Complete personal profile details
-- Select sport and injury details
-- Schedule doctor appointments
-- Generate injury/treatment reports
+## 🏗️ OOP Implementation (Java)
+We utilized **Object-Oriented Programming** in Java to ensure the system is modular and scalable:
+* **Encapsulation**: Private fields for patient data with secure accessors.
+* **Swing GUI**: A user-friendly desktop interface for both athletes and doctors.
+* **Data Management**: Clean separation between the UI and the data logic.
 
-The codebase follows object-oriented design with separate classes for domain entities and workflow control.
+## 💡 Motivation
+* **For Doctors**: To categorize injuries and simplify the diagnosis process.
+* **For Patients**: To provide helpful, long-term health summaries.
 
-## Core Features
-- Authentication and account persistence
-- Patient profile management
-- Sport and injury selection flows
-- Doctor appointment scheduling with slot checks
-- Treatment recommendation lookup
-- Medical report generation
-- GUI and CLI support in the same project
-
-## Tech Stack
-- Language: Java
-- UI: Java Swing (for desktop GUI)
-- Persistence: Plain text file (`accounts.txt`)
-
-## Project Structure
-```text
-FinalOOPproject/
-|-- README.md
-|-- accounts.txt                  # Root-level account data (used when running from project root)
-|-- bin/                          # Compiled class output (recommended)
-|-- docs/
-|   |-- Class diagramUML.png
-|   |-- Introduction to the injury assist system.docx
-|   `-- PROJECT_STRUCTURE.md
-`-- src/
-    |-- AccountManager.java
-    |-- Main.java                 # CLI entry point
-    |-- MainGUI.java              # GUI entry point
-    |-- Appointment.java
-    |-- Patient.java
-    |-- Person.java
-    |-- Injury.java
-    |-- Treatment.java
-    |-- Report.java
-    |-- Doctor.java
-    |-- Sport.java
-    |-- BodyPart.java
-    |-- Weekday.java
-    |-- accounts.txt              # Legacy data file if running with cwd=src
-    `-- com/
-```
-
-## How to Run
-
-### Prerequisites
-- JDK 17+ installed (JDK 11+ usually works for this project)
-- `java` and `javac` available in your `PATH`
-
-### Option 1: Run GUI (recommended)
-From project root:
-
-```powershell
-cd "d:\Gam3a\programming\Java\Java OOP\FinalOOPproject"
-javac -d bin src\*.java
-java -cp bin MainGUI
-```
-
-### Option 2: Run CLI
-From project root:
-
-```powershell
-cd "d:\Gam3a\programming\Java\Java OOP\FinalOOPproject"
-javac -d bin src\*.java
-java -cp bin Main
-```
-
-### Quick run from `src` (legacy style)
-```powershell
-cd "d:\Gam3a\programming\Java\Java OOP\FinalOOPproject\src"
-javac *.java
-java MainGUI
-```
-
-## Build and Clean
-
-### Rebuild to `bin`
-```powershell
-cd "d:\Gam3a\programming\Java\Java OOP\FinalOOPproject"
-Remove-Item -Recurse -Force bin\* -ErrorAction SilentlyContinue
-javac -d bin src\*.java
-```
-
-### Keep source folder clean
-Do not commit `.class` files inside `src`. The repository includes `.gitignore` rules to prevent this.
-
-## Data Storage
-- Accounts are stored in `accounts.txt` as comma-separated values.
-- Depending on working directory, app may read/write:
-  - `accounts.txt` (project root), or
-  - `src/accounts.txt` (if you run from `src`)
-
-For consistency, prefer running from project root using the `bin` output workflow.
-
-## Documentation
-Additional project documentation is available in:
-- `docs/Class diagramUML.png`
-- `docs/Introduction to the injury assist system.docx`
-- `docs/PROJECT_STRUCTURE.md`
-
-## Known Notes
-- GUI depends on desktop environment support (Swing).
-- Appointment slots are managed in memory during runtime.
-- Data format in `accounts.txt` supports both old (username/password) and extended user profile format.
-
-## Contributing
-1. Create a feature branch.
-2. Keep source code in `src` and build output in `bin`.
-3. Run both CLI and GUI paths before submitting.
-4. Update documentation when changing behavior or structure.
+## 🛠️ Installation
+1. Clone the repository.
+2. Open the project in your favorite IDE (IntelliJ, Eclipse, or NetBeans).
+3. Run the main class to launch the Java Swing interface.
